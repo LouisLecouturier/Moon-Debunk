@@ -1,0 +1,199 @@
+@import "../../styles/variables.scss";
+
+.headerContainer {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  width: 100%;
+  height: fit-content;
+  backdrop-filter: blur(5px);
+
+  transition: all 0.5s ease;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+}
+
+.headerContainer:hover {
+  background-color: rgba($color: #000, $alpha: 0.25);
+}
+
+.headerContainer.navIsShown {
+  background-color: rgba($color: $white, $alpha: 0.025);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 1000px 10000px rgba(0, 0, 0, 0.75);
+  transition: all 0.5s 0.25s ease;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 72px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  color: $white;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 40px;
+
+  div {
+    width: 100%;
+    background-color: $white;
+    height: 4px;
+    border-radius: 100px;
+  }
+}
+
+.animate {
+  div {
+    transform: scaleX(0);
+    transition: all 0.2s ease 0.25s;
+  }
+  div:first-child {
+    transform: scaleX(1);
+    animation: firstLine ease 0.5s forwards !important;
+  }
+  div:last-child {
+    transform: scaleX(1);
+    animation: lastLine ease 0.5s forwards !important;
+  }
+}
+.hasBeenAnimated {
+  div {
+    transform: scaleX(1);
+    transition: all 0.2s ease 0.25s;
+  }
+  div:first-child {
+    animation: backFirstLine ease 0.5s forwards;
+  }
+  div:last-child {
+    animation: backLastLine ease 0.5s forwards;
+  }
+}
+
+@keyframes firstLine {
+  0% {
+    transform: 0;
+  }
+  50% {
+    transform: translateY(14px);
+  }
+  100% {
+    transform: translateY(14px) rotate(45deg);
+  }
+}
+
+@keyframes lastLine {
+  0% {
+    transform: 0;
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+  100% {
+    transform: translateY(-14px) rotate(-45deg);
+  }
+}
+
+@keyframes backFirstLine {
+  0% {
+    transform: translateY(14px) rotate(45deg);
+  }
+  50% {
+    transform: translateY(14px);
+  }
+  100% {
+    transform: 0;
+  }
+}
+
+@keyframes backLastLine {
+  0% {
+    transform: translateY(-14px) rotate(-45deg);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+  100% {
+    transform: 0;
+  }
+}
+
+.desktopNav {
+  display: none;
+  justify-content: flex-end;
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 33%;
+  max-width: 800px;
+  column-gap: 104px;
+}
+
+.link {
+  transition: all 0.2s ease;
+}
+
+.link:hover {
+  color: $accent-400;
+  transition: all 0.2s ease;
+}
+
+.logo {
+  color: #fff;
+  height: fit-content;
+  width: 40px;
+  height: 40px;
+}
+
+.mobileNavContainer {
+  color: $white;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.mobileNavContainer.navIsShown {
+  max-height: 272px;
+  transition: all 0.5s 0.25s ease;
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  a {
+    padding: 24px 16px;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .header {
+    padding: 0 24px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .hamburger,
+  .mobileNavContainer {
+    display: none;
+  }
+
+  .desktopNav {
+    display: flex;
+  }
+  .logo {
+    order: -1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 0 40px;
+  }
+} ;

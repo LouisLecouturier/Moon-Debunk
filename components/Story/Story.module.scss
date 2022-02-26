@@ -1,0 +1,52 @@
+.sectionContainer {
+  width: 100%;
+  box-sizing: border-box;
+  background: rgb(17, 58, 93);
+  background: radial-gradient(
+    ellipse at bottom left,
+    hsl(208, 69%, 10%) 0%,
+    hsl(208, 84%, 5%) 100%
+  );
+}
+
+.sectionRow {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  width: 100%;
+  height: fit-content;
+}
+
+.sectionText {
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .sectionRow {
+    flex-direction: row;
+    justify-content: space-between;
+
+    & > div {
+      width: 50%;
+    }
+
+    column-gap: 40px;
+  }
+
+  .sectionText {
+    width: clamp(240px, 100%, 800px);
+  }
+
+  .sectionImageContainer {
+    width: clamp(288px, 30%, 600px);
+    height: 100%;
+    transform: rotate(7.5deg);
+  }
+
+  .sectionImage {
+    width: clamp(288px, 30%, 600px);
+    height: 100%;
+  }
+}
