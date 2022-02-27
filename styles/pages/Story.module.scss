@@ -1,0 +1,79 @@
+.fireLeft {
+  background: rgb(255, 159, 159);
+  background: radial-gradient(
+    ellipse at bottom left,
+    rgba(255, 0, 0, 0.5) 0%,
+    rgba(106, 143, 255, 0) 75%
+  );
+  inset: 0;
+  opacity: 0;
+  animation: fire 10s 3s ease infinite;
+}
+.fireLeft2 {
+  background: rgb(255, 159, 159);
+  background: radial-gradient(
+    ellipse at bottom center,
+    rgba(255, 213, 159, 0.3) 0%,
+    rgba(106, 143, 255, 0) 100%
+  );
+  inset: 0;
+  opacity: 0;
+
+  z-index: 1;
+  animation: fire 10s 1s ease infinite;
+}
+
+.fireRight {
+  background: rgb(255, 159, 159);
+  background: radial-gradient(
+    ellipse at top right,
+    rgba(255, 145, 0, 0.5) 0%,
+    rgba(106, 143, 255, 0) 100%
+  );
+  opacity: 0;
+
+  inset: 0;
+  z-index: 1;
+  animation: fire 10s ease infinite;
+}
+
+@keyframes fire {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+
+  30% {
+    opacity: 0.1;
+  }
+  44% {
+    opacity: 1;
+  }
+  48% {
+    opacity: 0.2;
+  }
+  52% {
+    opacity: 0.42;
+  }
+
+  60% {
+    opacity: 0.2;
+  }
+  64% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.1;
+  }
+  86% {
+    opacity: 0.3;
+  }
+  92% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

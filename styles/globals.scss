@@ -33,12 +33,23 @@ h6 {
   margin: 0;
 }
 
+hr {
+  opacity: 0;
+}
 .align-flex-end {
   align-items: flex-end;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .full-width {
   width: 100% !important;
+}
+
+.margin-24 {
+  margin: 24px 0;
 }
 
 .dark {
@@ -74,7 +85,60 @@ h6 {
   );
 }
 
+.page {
+  position: relative;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-snap {
+  scroll-snap-align: start;
+}
+.scroll-snap-center {
+  scroll-snap-align: start;
+}
+
+.relative {
+  position: relative;
+}
+
+.effects {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+
+  > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.quote {
+  font-weight: 200;
+  font-style: italic;
+  height: fit-content;
+  position: relative;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  margin: 24px 0 0 0;
+  padding: 8px 0 8px 16px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 100px;
+    background-color: $white;
+    width: 4px;
+    height: 100%;
+  }
+}
+
 .section {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -87,11 +151,28 @@ h6 {
     text-align: justify;
   }
 }
+.sectionRow {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 100%;
+}
 
 .sectionContent {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.block {
+  display: block;
+}
+
+.no-margin {
+  margin: 0 !important;
 }
 
 .sectionTitle {
@@ -101,27 +182,54 @@ h6 {
   text-transform: uppercase;
 }
 
+.sectionSubTitle {
+  font-size: calc(1.25rem + 1vw);
+  margin-bottom: 32px;
+}
+
 .sectionParagraph {
   margin: 0 0 16px 0;
   font-size: calc(1rem + 0.05vw);
+
+  &:last-child {
+    margin: 0;
+  }
 }
 
-.sectionRow {
-  display: flex;
-  align-items: center;
-}
-
-.desktopImageContainer {
+.image {
   display: none;
-  width: clamp(300px, 100%, 550px);
+  width: 50%;
+  overflow: hidden;
 
   span {
     font-weight: 600;
     font-size: 1.1rem;
-
     display: block;
+    width: fit-content;
+    justify-self: flex-start;
     margin-top: 16px;
   }
+}
+
+.flex {
+  display: flex;
+}
+
+.desktopImageContainer {
+  position: relative;
+  max-height: 75vh;
+  min-height: 500px;
+  width: 100%;
+  float: right;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.desktopImage {
+  object-fit: contain;
 }
 
 .mobileImageContainer {
@@ -190,25 +298,25 @@ h6 {
 }
 
 @media screen and (min-width: 800px) {
-  .section {
-    height: 100vh;
-  }
-
   .sectionContent {
     width: 50%;
   }
 
+  .image {
+    display: block;
+    float: right;
+  }
+  .pageSection {
+    min-height: 100vh;
+  }
+
   .sectionRow {
     column-gap: 80px;
+    height: 100%;
   }
 
   .mobileImageContainer {
     display: none;
-  }
-
-  .desktopImageContainer {
-    position: relative;
-    display: block;
   }
 }
 @media screen and (min-width: 1200px) {
