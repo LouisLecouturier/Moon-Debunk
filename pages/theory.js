@@ -358,7 +358,7 @@ const Theory = () => {
       <section className="section scroll-snap">
         <div className="sectionRow">
           <div className="sectionContent">
-            <h2 className="sectionTitle">Abscence de marquage au sol</h2>
+            <h2 className="sectionTitle">Absence de marquage au sol</h2>
             <div
               className="mobileImageContainer"
               style={{ "aspect-ratio": "1749/2537" }}

@@ -109,7 +109,7 @@ const Debunk = () => {
       <section className="section scroll-snap">
         <div className="sectionRow">
           <div className="sectionContent">
-            <h2 className="sectionTitle">L'abscence d'étoiles</h2>
+            <h2 className="sectionTitle">L'absence d'étoiles</h2>
             <div
               className="mobileImageContainer"
               style={{ "aspect-ratio": "262/378" }}
