@@ -7,7 +7,7 @@ const Theory = () => {
     <section className="section dark-blue scroll-snap">
       <div className="sectionRow alternate">
         <div className="sectionContent">
-          <h2 className="sectionTitle">On nous dit pas tout</h2>
+          <h2 className="sectionTitle">On ne nous dit pas tout</h2>
           <div className="mobileImageContainer">
             <Image
               className="mobileImage"
