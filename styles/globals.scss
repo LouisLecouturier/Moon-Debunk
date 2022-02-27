@@ -89,14 +89,6 @@ hr {
   position: relative;
   height: 100vh;
   overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
-
-.scroll-snap {
-  scroll-snap-align: start;
-}
-.scroll-snap-center {
-  scroll-snap-align: start;
 }
 
 .relative {
@@ -294,6 +286,17 @@ hr {
       margin-bottom: 80px;
       text-transform: uppercase;
     }
+  }
+
+  .page {
+    scroll-snap-type: y mandatory;
+  }
+
+  .scroll-snap {
+    scroll-snap-align: start;
+  }
+  .scroll-snap-center {
+    scroll-snap-align: start;
   }
 }
 
