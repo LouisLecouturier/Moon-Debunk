@@ -5,7 +5,7 @@ import Arrow from "../../../assets/icons/arrow.svg";
 const Manipulation = () => {
   return (
     <section className="section dark-red scroll-snap">
-      <div className="sectionRow">
+      <div className="sectionRow alternate">
         <div className="sectionContent">
           <h2 className="sectionTitle">Pourquoi on y croit</h2>
           <div className="mobileImageContainer">
