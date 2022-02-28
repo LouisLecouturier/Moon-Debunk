@@ -58,9 +58,9 @@ const Story = () => {
                   width={703}
                   height={1024}
                   layout="responsive"
-                  alt="Capsule du programme Apollo 1"
+                  alt="Capsule de la mission Apollo 1"
                 />
-                <span>Capsule du programme Apollo 1</span>
+                <span>Capsule de la mission Apollo 1</span>
               </div>
               <p className="sectionParagraph">
                 Apollo 1 était la première mission du programme à devoir
@@ -102,10 +102,10 @@ const Story = () => {
                     layout="responsive"
                     width={703}
                     height={1024}
-                    alt="Capsule du programme Apollo 1"
+                    alt="Capsule de la mission Apollo 1"
                   />
                 </div>
-                <span>Capsule du programme Apollo 1</span>
+                <span>Capsule de la mission Apollo 1</span>
               </div>
             </div>
           </div>
