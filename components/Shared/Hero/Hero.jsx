@@ -36,9 +36,11 @@ const Hero = ({ title1, title2, text, page }) => {
         </div>
 
         <div className={styles.heroShadow}></div>
-        {page && loaded.bg && loaded.moon && page === "index" && (
+        {page && page === "index" && (
           <div className={styles.moonContainer}>
-            <div className={styles.moonShadow}></div>
+            {loaded.bg && loaded.moon && (
+              <div className={styles.moonShadow}></div>
+            )}
             <Image
               className={styles.moon}
               src="/images/moon.webp"
