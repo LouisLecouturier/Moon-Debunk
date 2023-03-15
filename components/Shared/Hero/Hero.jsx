@@ -7,7 +7,8 @@ import Mouse from "../../../assets/icons/mouse.svg";
 import moon from "../../../public/images/moon.webp"
 
 const Hero = ({ title1, title2, text, page }) => {
-  const [loaded, setLoaded] = useState({ bg: false, moon: false });
+  const [loaded, setLoaded] = useState(false);
+
 
   return (
     <section className={`scroll-snap ${styles.heroContainer}`}>
@@ -36,15 +37,14 @@ const Hero = ({ title1, title2, text, page }) => {
 
         <div className={styles.heroShadow}></div>
         {page && page === "index" && (
-          <div className={styles.moonContainer}>
-            {loaded.bg && loaded.moon && (
+          <div className={`${styles.moonContainer} ${loaded ? styles.animate : ""}`}>
+
               <div className={styles.moonShadow}></div>
-            )}
             <Image
               className={styles.moon}
               src={moon}
               alt="moon"
-              onLoadingComplete={() => setLoaded((a) => { return {...a, moon: true }})}
+              onLoadingComplete={() => setLoaded(true)}
             />
           </div>
         )}
