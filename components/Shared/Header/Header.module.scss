@@ -7,7 +7,6 @@
   width: 100%;
   height: fit-content;
   backdrop-filter: blur(5px);
-
   transition: all 0.5s ease;
   background: linear-gradient(
     0deg,
@@ -82,7 +81,7 @@
 
 @keyframes firstLine {
   0% {
-    transform: 0;
+    transform: translateY(0);
   }
   50% {
     transform: translateY(14px);
@@ -94,7 +93,8 @@
 
 @keyframes lastLine {
   0% {
-    transform: 0;
+    transform: translateY(0);
+
   }
   50% {
     transform: translateY(-14px);
@@ -112,7 +112,8 @@
     transform: translateY(14px);
   }
   100% {
-    transform: 0;
+    transform: translateY(0);
+
   }
 }
 
@@ -124,7 +125,8 @@
     transform: translateY(-14px);
   }
   100% {
-    transform: 0;
+    transform: translateY(0);
+
   }
 }
 
@@ -149,7 +151,6 @@
 
 .logo {
   color: #fff;
-  height: fit-content;
   width: 40px;
   height: 40px;
 }

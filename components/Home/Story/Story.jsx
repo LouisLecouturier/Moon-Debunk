@@ -3,6 +3,8 @@ import Link from "next/link";
 
 import Arrow from "../../../assets/icons/arrow.svg";
 
+import saturn from "../../../public/images/rocket.webp";
+
 const Story = () => {
   return (
     <section className="section dark scroll-snap">
@@ -12,10 +14,8 @@ const Story = () => {
           <div className="mobileImageContainer">
             <Image
               className="mobileImage"
-              src="/images/rocket.webp"
-              width={2352}
-              height={3000}
-              alt="saturn"
+              src={saturn}
+              alt="Lanceur Saturn V"
             />
             <span>Fusée Saturn V</span>
           </div>
@@ -29,11 +29,9 @@ const Story = () => {
             la super puissance n’a plus le droit à l’erreur et doit se relancer.
           </p>
 
-          <Link href="/story">
-            <a className="sectionLink">
-              <span>En savoir plus</span>
-              <Arrow className="arrow" />
-            </a>
+          <Link href="/story" className="sectionLink">
+            <span>En savoir plus</span>
+            <Arrow className="arrow" />
           </Link>
         </div>
         <div className="sectionContent image">
@@ -44,10 +42,7 @@ const Story = () => {
             >
               <Image
                 className="desktopImage"
-                src="/images/rocket.webp"
-                layout="responsive"
-                width={2352}
-                height={3000}
+                src={saturn}
                 alt="Lanceur Saturn V"
               />
             </div>

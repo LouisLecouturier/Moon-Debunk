@@ -3,20 +3,19 @@ import styles from "./Hero.module.scss";
 import { useState } from "react";
 import Mouse from "../../../assets/icons/mouse.svg";
 
+
+import moon from "../../../public/images/moon.webp"
+
 const Hero = ({ title1, title2, text, page }) => {
   const [loaded, setLoaded] = useState({ bg: false, moon: false });
 
   return (
     <section className={`scroll-snap ${styles.heroContainer}`}>
-      <Image
-        className={styles.heroImage}
-        width={2268}
-        height={4032}
-        layout="fill"
-        onLoadingComplete={() => setLoaded({ ...loaded, bg: true })}
-        src="/images/space.webp"
-        alt="space"
-      />
+        <div className={styles.background}>
+            <div className={styles.stars}></div>
+            <div className={styles.stars2}></div>
+            <div className={styles.stars3}></div>
+        </div>
 
       <div className={styles.heroContent}>
         <div className={styles.heroText}>
@@ -43,12 +42,9 @@ const Hero = ({ title1, title2, text, page }) => {
             )}
             <Image
               className={styles.moon}
-              src="/images/moon.webp"
+              src={moon}
               alt="moon"
-              onLoadingComplete={() => setLoaded({ ...loaded, moon: true })}
-              width={500}
-              height={500}
-              layout="responsive"
+              onLoadingComplete={() => setLoaded((a) => { return {...a, moon: true }})}
             />
           </div>
         )}

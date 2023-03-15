@@ -2,19 +2,20 @@ import Image from "next/image";
 import Link from "next/link";
 import Arrow from "../../../assets/icons/arrow.svg";
 
+
+import debunkMeme from "../../../public/images/debunkMeme.webp"
+
 const Debunk = () => {
   return (
     <section className="section dark-green scroll-snap">
       <div className="sectionRow">
         <div className="sectionContent">
-          <h2 className="sectionTitle">Et puis m*rde, réflechissez</h2>
+          <h2 className="sectionTitle">Et puis m*rde, réfléchissez</h2>
           <div className="mobileImageContainer">
             <Image
               className="mobileImage"
-              src="/images/debunkMeme.webp"
-              width={600}
-              height={599}
-              layout="responsive"
+              src={debunkMeme}
+              
               alt="Homme qui brule un journal"
             />
           </div>
@@ -25,11 +26,11 @@ const Debunk = () => {
             alunissage a bel et bien eu lieu.
           </p>
 
-          <Link href="/story">
-            <a className="sectionLink">
+          <Link href="/story" className="sectionLink">
+
               <span>Découvrir la vérité</span>
               <Arrow className="arrow" />
-            </a>
+
           </Link>
         </div>
         <div className="sectionContent image">
@@ -40,10 +41,7 @@ const Debunk = () => {
             >
               <Image
                 className="desktopImage"
-                src="/images/debunkMeme.webp"
-                layout="responsive"
-                width={600}
-                height={599}
+                src={debunkMeme}
                 alt="Meme sur la théorie"
               />
             </div>

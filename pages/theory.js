@@ -7,6 +7,18 @@ import Hero from "../components/Shared/Hero/Hero";
 import Arrow from "../assets/icons/arrow.svg";
 import Footer from "../components/Shared/Footer/Footer";
 
+
+
+
+
+import book from "../public/images/theory/book.webp"
+import flag from "../public/images/theory/flag.webp"
+import sky from "../public/images/theory/sky.webp"
+import footprint from "../public/images/theory/footprint.webp"
+import light from "../public/images/theory/light.webp"
+import rock from "../public/images/theory/rock.webp"
+import vehicles from "../public/images/theory/vehicles.webp"
+
 const Theory = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -32,21 +44,19 @@ const Theory = () => {
             >
               <Image
                 className="mobileImage"
-                src="/images/theory/book.webp"
-                layout="responsive"
-                width={387}
-                height={500}
+                src={book}
                 alt="Couverture du livre"
               />
             </div>
             <p className="sectionParagraph">
               Tout commence en <strong>1976</strong> lorsqu’un certain{" "}
               <strong>Bill Kaysing</strong> publie un livre :
+            </p>
               <blockquote className="quote">
+
                 “We Never Went to the Moon: America’s Thirty Billion Dollar
                 Swindle”
               </blockquote>
-            </p>
             <p className="sectionParagraph">
               Dans ce livre, l’auteur expose tous les arguments qui, selon lui,
               prouvent que la mission{" "}
@@ -69,14 +79,11 @@ const Theory = () => {
               >
                 <Image
                   className="desktopImage"
-                  src="/images/theory/book.webp"
-                  layout="responsive"
-                  width={387}
-                  height={500}
+                  src={book}
                   alt="Couverture du livre"
                 />
               </div>
-              <span>Couvertre du livre</span>
+              <span>Couverture du livre</span>
             </div>
           </div>
         </div>
@@ -88,11 +95,11 @@ const Theory = () => {
           diffuse un documentaire conspirationniste. Celui-ci reprend la théorie
           et donne suite au livre de Bill Kaysing en cherchant à prouver la
           véracité de tous les arguments avancés.
+        </p>
           <blockquote className="quote">
             Conspiracy Theory : Did We Land on the Moon ? ("Théorie du complot :
             avons-nous marché sur la Lune ?") - <strong>Craig Tipley</strong>
           </blockquote>
-        </p>
 
         <p className="sectionParagraph">
           La diffusion de ce documentaire relance alors la théorie et propage
@@ -149,10 +156,7 @@ const Theory = () => {
             >
               <Image
                 className="mobileImage"
-                src="/images/theory/flag.webp"
-                layout="responsive"
-                width={1045}
-                height={1316}
+                src={flag}
                 alt="Drapeau sur la Lune"
               />
             </div>
@@ -171,10 +175,7 @@ const Theory = () => {
               >
                 <Image
                   className="desktopImage"
-                  src="/images/theory/flag.webp"
-                  layout="responsive"
-                  width={1045}
-                  height={1316}
+                  src={flag}
                   alt="Drapeau sur la lune"
                 />
               </div>
@@ -193,10 +194,7 @@ const Theory = () => {
             >
               <Image
                 className="mobileImage"
-                src="/images/theory/sky.webp"
-                layout="responsive"
-                width={1108}
-                height={1647}
+                src={sky}
                 alt="La Terre vue de la Lune"
               />
             </div>
@@ -214,10 +212,7 @@ const Theory = () => {
               >
                 <Image
                   className="desktopImage"
-                  src="/images/theory/sky.webp"
-                  layout="responsive"
-                  width={1108}
-                  height={1647}
+                  src={sky}
                   alt="La Terre vue de la Lune"
                 />
               </div>
@@ -236,10 +231,7 @@ const Theory = () => {
             >
               <Image
                 className="mobileImage"
-                src="/images/theory/footprint.webp"
-                layout="responsive"
-                width={450}
-                height={669}
+                src={footprint}
                 alt="Empreinte d'astronaute"
               />
             </div>
@@ -257,10 +249,7 @@ const Theory = () => {
               >
                 <Image
                   className="desktopImage"
-                  src="/images/theory/footprint.webp"
-                  layout="responsive"
-                  width={450}
-                  height={669}
+                  src={footprint}
                   alt="Empreinte d'astronaute"
                 />
               </div>
@@ -279,10 +268,7 @@ const Theory = () => {
             >
               <Image
                 className="mobileImage"
-                src="/images/theory/light.webp"
-                layout="responsive"
-                width={1670}
-                height={2373}
+                src={light}
                 alt="Astronaute sortant d'un véhicule"
               />
             </div>
@@ -301,10 +287,7 @@ const Theory = () => {
               >
                 <Image
                   className="desktopImage"
-                  src="/images/theory/light.webp"
-                  layout="responsive"
-                  width={1670}
-                  height={2373}
+                  src={light}
                   alt="Astronaute sortant d'un véhicule"
                 />
               </div>
@@ -323,10 +306,7 @@ const Theory = () => {
             >
               <Image
                 className="mobileImage"
-                src="/images/theory/rock.webp"
-                layout="responsive"
-                width={329}
-                height={301}
+                src={rock}
                 alt="Astronaute sortant d'un véhicule"
               />
             </div>
@@ -344,10 +324,7 @@ const Theory = () => {
               >
                 <Image
                   className="desktopImage"
-                  src="/images/theory/rock.webp"
-                  layout="responsive"
-                  width={329}
-                  height={301}
+                  src={rock}
                   alt="Astronaute sortant d'un véhicule"
                 />
               </div>
@@ -365,10 +342,7 @@ const Theory = () => {
             >
               <Image
                 className="mobileImage"
-                src="/images/theory/vehicles.webp"
-                layout="responsive"
-                width={1749}
-                height={2537}
+                src={vehicles}
                 alt="Astronaute sortant d'un véhicule"
               />
             </div>
@@ -387,10 +361,7 @@ const Theory = () => {
               >
                 <Image
                   className="desktopImage"
-                  src="/images/theory/vehicles.webp"
-                  layout="responsive"
-                  width={1749}
-                  height={2537}
+                  src={vehicles}
                   alt="Astronaute sortant d'un véhicule"
                 />
               </div>
@@ -408,11 +379,9 @@ const Theory = () => {
         <h2 className="sectionTitle">
           Mais... tous ces arguments ne tiennent pas la route
         </h2>
-        <Link href="/debunk">
-          <a className="sectionLink">
-            <span>Découvrir pourquoi</span>
-            <Arrow />
-          </a>
+        <Link href="/debunk" className="sectionLink">
+          <span>Découvrir pourquoi</span>
+          <Arrow />
         </Link>
       </section>
       <Footer />

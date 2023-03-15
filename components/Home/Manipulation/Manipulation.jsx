@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Arrow from "../../../assets/icons/arrow.svg";
 
+import anonymous from "../../../public/images/anonymous.webp"
+
 const Manipulation = () => {
   return (
     <section className="section dark-red scroll-snap">
@@ -11,10 +13,7 @@ const Manipulation = () => {
           <div className="mobileImageContainer">
             <Image
               className="mobileImage"
-              src="/images/anonymous.webp"
-              width={1200}
-              height={1500}
-              layout="intrinsic"
+              src={anonymous}
               alt="Homme qui brule un journal"
             />
           </div>
@@ -30,11 +29,9 @@ const Manipulation = () => {
             enclin à croire ce qui relève d’un biais cognitif, nous serions
             “neuronalement” conçus pour croire au théorie complotiste.
           </p>
-          <Link href="/manipulation">
-            <a className="sectionLink">
-              <span>Comment ça marche</span>
-              <Arrow className="arrow" />
-            </a>
+          <Link href="/manipulation" className="sectionLink">
+            <span>Comment ça marche</span>
+            <Arrow className="arrow" />
           </Link>
         </div>
         <div className="sectionContent image">
@@ -45,10 +42,7 @@ const Manipulation = () => {
             >
               <Image
                 className="desktopImage"
-                src="/images/anonymous.webp"
-                layout="responsive"
-                width={1200}
-                height={1500}
+                src={anonymous}
                 alt="Homme qui brule un journal"
               />
             </div>

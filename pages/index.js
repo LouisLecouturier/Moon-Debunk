@@ -24,7 +24,6 @@ export default function Home() {
       <Header />
       <div className="page">
         <Hero title1="Yes," title2="We've been there" page="index" />
-
         <Story />
         <Theory />
         <Debunk />

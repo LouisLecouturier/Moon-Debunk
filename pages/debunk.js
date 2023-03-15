@@ -6,6 +6,15 @@ import Link from "next/link";
 import Head from "next/head";
 import Footer from "../components/Shared/Footer/Footer";
 
+
+
+import paths from "../public/images/theory/paths.webp"
+import flag from "../public/images/theory/flag.webp"
+import sky from "../public/images/theory/sky.webp"
+import realRock from "../public/images/theory/realRock.webp"
+import light from "../public/images/theory/light.webp"
+
+
 const Debunk = () => {
   return (
     <div className="page dark">
@@ -15,8 +24,8 @@ const Debunk = () => {
       <Header />
       <div className="scroll-snap">
         <Hero
-          title1="Et puis m*erde,"
-          title2="Reflechissez"
+          title1="Et puis m*rde,"
+          title2="Réflechissez"
           text="Par Gaspard Torris et Mael Monteil"
         />
       </div>
@@ -53,10 +62,7 @@ const Debunk = () => {
             >
               <Image
                 className="mobileImage"
-                src="/images/theory/flag.webp"
-                layout="responsive"
-                width={1045}
-                height={1316}
+                src={flag}
                 alt="Drapeau sur la Lune"
               />
             </div>
@@ -82,10 +88,7 @@ const Debunk = () => {
               >
                 <Image
                   className="desktopImage"
-                  src="/images/theory/flag.webp"
-                  layout="responsive"
-                  width={1045}
-                  height={1316}
+                  src={flag}
                   alt="Drapeau sur la lune"
                 />
               </div>
@@ -116,10 +119,7 @@ const Debunk = () => {
             >
               <Image
                 className="mobileImage"
-                src="/images/theory/sky.webp"
-                layout="responsive"
-                width={262}
-                height={378}
+                src={sky}
                 alt="La Terre vue de la Lune"
               />
             </div>
@@ -149,10 +149,7 @@ const Debunk = () => {
               >
                 <Image
                   className="desktopImage"
-                  src="/images/theory/sky.webp"
-                  layout="responsive"
-                  width={262}
-                  height={378}
+                  src={sky}
                   alt="La Terre vue de la Lune"
                 />
               </div>
@@ -171,10 +168,7 @@ const Debunk = () => {
             >
               <Image
                 className="mobileImage"
-                src="/images/theory/realRock.webp"
-                layout="responsive"
-                width={600}
-                height={529}
+                src={realRock}
                 alt="La vraie photo"
               />
             </div>
@@ -192,10 +186,7 @@ const Debunk = () => {
               >
                 <Image
                   className="desktopImage"
-                  src="/images/theory/realRock.webp"
-                  layout="responsive"
-                  width={600}
-                  height={529}
+                  src={realRock}
                   alt="La vraie photo"
                 />
               </div>
@@ -213,10 +204,7 @@ const Debunk = () => {
             >
               <Image
                 className="mobileImage"
-                src="/images/theory/light.webp"
-                layout="responsive"
-                width={1670}
-                height={2373}
+                src={light}
                 alt="Astronaute sortant d'un véhicule"
               />
             </div>
@@ -253,10 +241,7 @@ const Debunk = () => {
               >
                 <Image
                   className="desktopImage"
-                  src="/images/theory/light.webp"
-                  layout="responsive"
-                  width={1670}
-                  height={2373}
+                  src={light}
                   alt="Astronaute sortant d'un véhicule"
                 />
               </div>
@@ -276,10 +261,7 @@ const Debunk = () => {
             >
               <Image
                 className="mobileImage"
-                src="/images/theory/paths.webp"
-                layout="responsive"
-                width={670}
-                height={322}
+                src={paths}
                 alt="Une lettre C sur une roche lunaire"
               />
             </div>
@@ -293,10 +275,7 @@ const Debunk = () => {
               <div className="desktopImageContainer flex">
                 <Image
                   className="desktopImage"
-                  src="/images/theory/paths.webp"
-                  layout="intrinsic"
-                  width={670}
-                  height={322}
+                  src={paths}
                   alt="Une lettre C sur une roche lunaire"
                 />
               </div>
@@ -336,11 +315,11 @@ const Debunk = () => {
           fausses et on ne compte pas le nombre de preuves qui démonte ces
           théories...
         </p>
-        <Link href="/manipulation">
-          <a className="sectionLink">
+        <Link href="/manipulation" className="sectionLink">
+
             <span>Voir pourquoi</span>
             <Arrow />
-          </a>
+
         </Link>
       </section>
       <Footer />
