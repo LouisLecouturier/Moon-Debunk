@@ -40,7 +40,7 @@ const Theory = () => {
             <h2 className="sectionTitle">Tout part de là</h2>
             <div
               className="mobileImageContainer"
-              style={{ "aspect-ratio": "387/500" }}
+              style={{ aspectRatio: "387/500" }}
             >
               <Image
                 className="mobileImage"
@@ -75,7 +75,7 @@ const Theory = () => {
             <div className="imageContainer align-flex-end">
               <div
                 className="desktopImageContainer"
-                style={{ "aspect-ratio": "387/500" }}
+                style={{ aspectRatio: "387/500" }}
               >
                 <Image
                   className="desktopImage"
@@ -152,7 +152,7 @@ const Theory = () => {
             <h2 className="sectionTitle">Le drapeau flotte</h2>
             <div
               className="mobileImageContainer"
-              style={{ "aspect-ratio": "1045/1316" }}
+              style={{ aspectRatio: "1045/1316" }}
             >
               <Image
                 className="mobileImage"
@@ -171,7 +171,7 @@ const Theory = () => {
             <div className="imageContainer align-flex-end">
               <div
                 className="desktopImageContainer"
-                style={{ "aspect-ratio": "1045/1316" }}
+                style={{ aspectRatio: "1045/1316" }}
               >
                 <Image
                   className="desktopImage"
@@ -190,7 +190,7 @@ const Theory = () => {
             <h2 className="sectionTitle">L'abscence d'étoiles</h2>
             <div
               className="mobileImageContainer"
-              style={{ "aspect-ratio": "1108/1647" }}
+              style={{ aspectRatio: "1108/1647" }}
             >
               <Image
                 className="mobileImage"
@@ -208,7 +208,7 @@ const Theory = () => {
             <div className="imageContainer align-flex-end">
               <div
                 className="desktopImageContainer"
-                style={{ "aspect-ratio": "1108/1647" }}
+                style={{ aspectRatio: "1108/1647" }}
               >
                 <Image
                   className="desktopImage"
@@ -227,7 +227,7 @@ const Theory = () => {
             <h2 className="sectionTitle">Les empreintes</h2>
             <div
               className="mobileImageContainer"
-              style={{ "aspect-ratio": "450/669" }}
+              style={{ aspectRatio: "450/669" }}
             >
               <Image
                 className="mobileImage"
@@ -245,7 +245,7 @@ const Theory = () => {
             <div className="imageContainer align-flex-end">
               <div
                 className="desktopImageContainer"
-                style={{ "aspect-ratio": "450/669" }}
+                style={{ aspectRatio: "450/669" }}
               >
                 <Image
                   className="desktopImage"
@@ -264,7 +264,7 @@ const Theory = () => {
             <h2 className="sectionTitle">L'Éclairage</h2>
             <div
               className="mobileImageContainer"
-              style={{ "aspect-ratio": "1670/2373" }}
+              style={{ aspectRatio: "1670/2373" }}
             >
               <Image
                 className="mobileImage"
@@ -283,7 +283,7 @@ const Theory = () => {
             <div className="imageContainer align-flex-end">
               <div
                 className="desktopImageContainer"
-                style={{ "aspect-ratio": "1670/2373" }}
+                style={{ aspectRatio: "1670/2373" }}
               >
                 <Image
                   className="desktopImage"
@@ -302,7 +302,7 @@ const Theory = () => {
             <h2 className="sectionTitle">Une lettre C sur une roche lunaire</h2>
             <div
               className="mobileImageContainer"
-              style={{ "aspect-ratio": "329/301" }}
+              style={{ aspectRatio: "329/301" }}
             >
               <Image
                 className="mobileImage"
@@ -320,7 +320,7 @@ const Theory = () => {
             <div className="imageContainer align-flex-end">
               <div
                 className="desktopImageContainer"
-                style={{ "aspect-ratio": "329/301" }}
+                style={{ aspectRatio: "329/301" }}
               >
                 <Image
                   className="desktopImage"
@@ -338,7 +338,7 @@ const Theory = () => {
             <h2 className="sectionTitle">Absence de marquage au sol</h2>
             <div
               className="mobileImageContainer"
-              style={{ "aspect-ratio": "1749/2537" }}
+              style={{ aspectRatio: "1749/2537" }}
             >
               <Image
                 className="mobileImage"
@@ -350,14 +350,14 @@ const Theory = () => {
               Comment est-ce possible que des engins pesant plusieurs tonnes
               n’ont pas provoqué de poussières ou bien des cratères ? Sur les
               différentes photos de prises durant la mission, on ne remarque
-              aucunetrace de véhicule sur la lune.
+              aucune trace de véhicule sur la lune.
             </p>
           </div>
           <div className="sectionContext image">
             <div className="imageContainer align-flex-end">
               <div
                 className="desktopImageContainer"
-                style={{ "aspect-ratio": "1749/2537" }}
+                style={{ aspectRatio: "1749/2537" }}
               >
                 <Image
                   className="desktopImage"

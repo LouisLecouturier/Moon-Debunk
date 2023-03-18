@@ -30,7 +30,7 @@ const Manipulation = () => {
           Selon les psychologues ayant étudié la question, les biais cognitifs
           seraient en grandes partie responsables de l’adhésion aux théories du
           complot. En d’autres termes notre systèmes cognitif est plus enclin à
-          croire ce qui relève d’un biais cognitif, nous serions “neuronalement”
+          croire ce qui relève d’un biais cognitif, nous serions “neuronallement”
           conçus pour croire au théorie complotiste.
         </p>
         <hr />

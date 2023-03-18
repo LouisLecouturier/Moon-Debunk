@@ -9,7 +9,7 @@ body {
 }
 
 body * {
-  font-family: "Outfit", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+  font-family: var(--outfit), -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   box-sizing: border-box;
 }
@@ -21,7 +21,7 @@ a {
 
 div,
 p {
-  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  font-family: var(--ibm_plex), sans-serif;
 }
 
 h1,
@@ -40,13 +40,7 @@ hr {
   align-items: flex-end;
 }
 
-.justify-center {
-  justify-content: center;
-}
 
-.full-width {
-  width: 100% !important;
-}
 
 .margin-24 {
   margin: 24px 0;
@@ -159,9 +153,6 @@ hr {
   height: 100%;
 }
 
-.block {
-  display: block;
-}
 
 .no-margin {
   margin: 0 !important;

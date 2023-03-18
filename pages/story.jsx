@@ -96,7 +96,7 @@ const Story = () => {
                 <div className="imageContainer align-flex-end">
                   <div
                       className="desktopImageContainer"
-                      style={{"aspect-ratio": "703/1024"}}
+                      style={{aspectRatio: "703/1024"}}
                   >
                     <Image
                         className="desktopImage"
@@ -159,7 +159,7 @@ const Story = () => {
               <div className="imageContainer align-flex-end">
                 <div
                     className="desktopImageContainer"
-                    style={{"aspect-ratio": "1197/1662"}}
+                    style={{aspectRatio: "1197/1662"}}
                 >
                   <Image
                       className="desktopImage"
@@ -223,7 +223,7 @@ const Story = () => {
               <div className="imageContainer align-flex-end">
                 <div
                     className="desktopImageContainer"
-                    style={{"aspect-ratio": "393/569"}}
+                    style={{aspectRatio: "393/569"}}
                 >
                   <Image
                       className="desktopImage"

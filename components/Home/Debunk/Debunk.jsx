@@ -37,7 +37,7 @@ const Debunk = () => {
           <div className="imageContainer align-flex-end">
             <div
               className="desktopImageContainer"
-              style={{ "aspect-ratio": "600/599" }}
+              style={{ aspectRatio: "600/599" }}
             >
               <Image
                 className="desktopImage"

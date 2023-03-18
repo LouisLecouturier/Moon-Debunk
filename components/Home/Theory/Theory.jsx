@@ -41,7 +41,7 @@ const Theory = () => {
                     <div className="imageContainer align-flex-end">
                         <div
                             className="desktopImageContainer"
-                            style={{"aspect-ratio": "651/675"}}
+                            style={{aspectRatio: "651/675"}}
                         >
                             <Image
                                 className="desktopImage"

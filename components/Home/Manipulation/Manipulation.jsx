@@ -38,7 +38,7 @@ const Manipulation = () => {
           <div className="imageContainer align-flex-end">
             <div
               className="desktopImageContainer"
-              style={{ "aspect-ratio": "1200/1500" }}
+              style={{ aspectRatio: "1200/1500" }}
             >
               <Image
                 className="desktopImage"

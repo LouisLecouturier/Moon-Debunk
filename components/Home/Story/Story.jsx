@@ -38,7 +38,7 @@ const Story = () => {
           <div className="imageContainer align-flex-end">
             <div
               className="desktopImageContainer"
-              style={{ "aspect-ratio": "2352/3000" }}
+              style={{ aspectRatio: "2352/3000" }}
             >
               <Image
                 className="desktopImage"

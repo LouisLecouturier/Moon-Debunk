@@ -58,7 +58,7 @@ const Debunk = () => {
             <h2 className="sectionTitle">Le drapeau flotte</h2>
             <div
               className="mobileImageContainer"
-              style={{ "aspect-ratio": "1045/1316" }}
+              style={{ aspectRatio: "1045/1316" }}
             >
               <Image
                 className="mobileImage"
@@ -84,7 +84,7 @@ const Debunk = () => {
             <div className="imageContainer align-flex-end">
               <div
                 className="desktopImageContainer"
-                style={{ "aspect-ratio": "1045/1316" }}
+                style={{ aspectRatio: "1045/1316" }}
               >
                 <Image
                   className="desktopImage"
@@ -115,7 +115,7 @@ const Debunk = () => {
             <h2 className="sectionTitle">L'absence d'étoiles</h2>
             <div
               className="mobileImageContainer"
-              style={{ "aspect-ratio": "262/378" }}
+              style={{ aspectRatio: "262/378" }}
             >
               <Image
                 className="mobileImage"
@@ -145,7 +145,7 @@ const Debunk = () => {
             <div className="imageContainer align-flex-end">
               <div
                 className="desktopImageContainer"
-                style={{ "aspect-ratio": "262/378" }}
+                style={{ aspectRatio: "262/378" }}
               >
                 <Image
                   className="desktopImage"
@@ -164,7 +164,7 @@ const Debunk = () => {
             <h2 className="sectionTitle">Une lettre C sur une roche lunaire</h2>
             <div
               className="mobileImageContainer"
-              style={{ "aspect-ratio": "600/529" }}
+              style={{ aspectRatio: "600/529" }}
             >
               <Image
                 className="mobileImage"
@@ -182,7 +182,7 @@ const Debunk = () => {
             <div className="imageContainer align-flex-end">
               <div
                 className="desktopImageContainer"
-                style={{ "aspect-ratio": "600/529" }}
+                style={{ aspectRatio: "600/529" }}
               >
                 <Image
                   className="desktopImage"
@@ -200,7 +200,7 @@ const Debunk = () => {
             <h2 className="sectionTitle">L'Éclairage</h2>
             <div
               className="mobileImageContainer"
-              style={{ "aspect-ratio": "1670/2373" }}
+              style={{ aspectRatio: "1670/2373" }}
             >
               <Image
                 className="mobileImage"
@@ -237,7 +237,7 @@ const Debunk = () => {
             <div className="imageContainer align-flex-end">
               <div
                 className="desktopImageContainer"
-                style={{ "aspect-ratio": "1670/2373" }}
+                style={{ aspectRatio: "1670/2373" }}
               >
                 <Image
                   className="desktopImage"
@@ -257,7 +257,7 @@ const Debunk = () => {
             <h2 className="sectionTitle">Abscence de marquage au sol</h2>
             <div
               className="mobileImageContainer"
-              style={{ "aspect-ratio": "670/322" }}
+              style={{ aspectRatio: "670/322" }}
             >
               <Image
                 className="mobileImage"
