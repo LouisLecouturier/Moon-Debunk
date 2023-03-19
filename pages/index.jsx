@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Moon Hoax</title>
+        <title>Moon Debunk</title>
       </Head>
 
       <Header />
