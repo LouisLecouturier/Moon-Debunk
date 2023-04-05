@@ -8,9 +8,6 @@ import Arrow from "../assets/icons/arrow.svg";
 import Footer from "../components/Shared/Footer/Footer";
 
 
-
-
-
 import book from "../public/images/theory/book.webp"
 import flag from "../public/images/theory/flag.webp"
 import sky from "../public/images/theory/sky.webp"
@@ -187,7 +184,7 @@ const Theory = () => {
       <section className="section scroll-snap">
         <div className="sectionRow">
           <div className="sectionContent">
-            <h2 className="sectionTitle">L'abscence d'étoiles</h2>
+            <h2 className="sectionTitle">L'absence d'étoiles</h2>
             <div
               className="mobileImageContainer"
               style={{ aspectRatio: "1108/1647" }}
