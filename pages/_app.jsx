@@ -16,7 +16,6 @@ const ibm = IBM_Plex_Sans_Thai_Looped({
   variable: "--ibm_plex"
 });
 
-// 600
 
 function MyApp({ Component, pageProps }) {
   return (
