@@ -21,7 +21,7 @@ const ibm = IBM_Plex_Sans_Thai_Looped({
 function MyApp({ Component, pageProps }) {
   return (
     <div className={`${outfit.variable} ${ibm.variable}`}>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </div>
   );
 }
